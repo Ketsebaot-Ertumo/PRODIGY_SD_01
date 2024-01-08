@@ -100,9 +100,9 @@ const App = () => {
               value={unit}
               onChange={(e) => setUnit(e.target.value)}
             >
-              <option value="C">Celsius</option>
-              <option value="F">Fahrenheit</option>
-              <option value="K">Kelvin</option>
+              <option value="C">&deg;C</option>
+              <option value="F">&deg;F</option>
+              <option value="K">K</option>
             </select>
           </div>
           <button
