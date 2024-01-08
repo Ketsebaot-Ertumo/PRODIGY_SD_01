@@ -92,7 +92,7 @@ const App = () => {
         <h1 className="text-4xl font-semibold text-center p-10 pt-0">Temperature Converter</h1>
 
         <div className='sm:flex justify-center pt-10'>
-        <div className='border border-blue-500 bg-white p-10 rounded-t-xl sm:rounded-l-xl sm:w-[30%]'>
+        <div className='border border-blue-500 bg-white p-10 rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl sm:w-[30%]'>
           <h1 className="text-2xl font-semibold text-center">Enter Temperature</h1>
           <div className="flex mb-4 justify-center mt-20">
             <input
@@ -121,7 +121,7 @@ const App = () => {
           </button>
         </div>
           
-        <div className='bg-blue-500 p-10 rounded-b-xl sm:rounded-r-xl sm:w-[30%] border border-blue-500'>
+        <div className='bg-blue-500 p-10 rounded-b-xl sm:rounded-bl-none sm:rounded-r-xl sm:w-[30%] border border-blue-500'>
           {results && (
             <div className="sm:mt-20 text-center  items-center justify-center">
               {/* <p>{value}&deg; {unit} is equal to:</p> */}
