@@ -40,40 +40,40 @@ const App = () => {
   };
 
   const getConversionResults = () => {
-    if (unit === 'C') {
-      return (
-        <>
-          <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
-            <p>= {results.fahrenheit}  &deg;F</p>
-          </div>
-          <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
-            <p>= {results.kelvin} K</p>
-          </div>
-        </>
-      );
-    } else if (unit === 'F') {
-      return (
-        <>
-          <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
-            <p>= {results.celsius}  &deg;C</p>
-          </div>
-          <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
-            <p>= {results.kelvin} K</p>
-          </div>
-        </>
-      );
-    } else if (unit === 'K') {
-      return (
-        <>
-          <div className="bg-gray-200 p-4 rounded">
-            <p>= {results.celsius}  &deg;C</p>
-          </div>
-          <div className="bg-gray-200 p-4 rounded">
-            <p>= {results.fahrenheit}  &deg;F</p>
-          </div>
-        </>
-      );
-    }
+        if (unit === 'C') {
+          return (
+            <>
+              <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
+                <p>= {results.fahrenheit}  &deg;F</p>
+              </div>
+              <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
+                <p>= {results.kelvin} K</p>
+              </div>
+            </>
+          );
+        } else if (unit === 'F') {
+          return (
+            <>
+              <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
+                <p>= {results.celsius}  &deg;C</p>
+              </div>
+              <div className="bg-gray-200 p-4 rounded-xl border border-blue-500">
+                <p>= {results.kelvin} K</p>
+              </div>
+            </>
+          );
+        } else if (unit === 'K') {
+          return (
+            <>
+              <div className="bg-gray-200 p-4 rounded">
+                <p>= {results.celsius}  &deg;C</p>
+              </div>
+              <div className="bg-gray-200 p-4 rounded">
+                <p>= {results.fahrenheit}  &deg;F</p>
+              </div>
+            </>
+          );
+        }
 
     return null;
   };
