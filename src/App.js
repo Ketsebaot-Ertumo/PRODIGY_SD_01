@@ -89,7 +89,7 @@ const App = () => {
   return (
     <div className="container pt-20 sm:pb-[50%] bg-white-grey p-10">
 
-        <h1 className="text-4xl font-semibold text-center p-10 pt-0">Temperature Converter</h1>
+        <h1 className="text-4xl font-semibold text-center p-10 pt-0 flex justify-center">Temperature Converter</h1>
 
         <div className='sm:flex justify-center pt-10'>
         <div className='border border-blue-500 bg-white p-10 rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl sm:w-[30%]'>
@@ -114,7 +114,8 @@ const App = () => {
             </select>
           </div>
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded-l-xl rounded-r-xl ml-[33%] mt-5"
+            // className="bg-blue-500 text-white px-4 py-2 rounded-l-xl rounded-r-xl ml-[33%] mt-5"
+            className="bg-blue-500 text-white px-4 py-2 rounded-l-xl rounded-r-xl flex justify-center ml-[25%] mt-5"
             onClick={convertTemperature}
           >
             Convert
@@ -123,7 +124,8 @@ const App = () => {
           
         <div className='bg-blue-500 p-10 rounded-b-xl sm:rounded-bl-none sm:rounded-r-xl sm:w-[30%] border border-blue-500'>
           {results && (
-            <div className="sm:mt-20 text-center  items-center justify-center">
+            // <div className="sm:mt-20 text-center  items-center justify-center">
+            <div className="sm:mt-20 text-center  items-center justify-center ml-[33%] mt-5">
               {/* <p>{value}&deg; {unit} is equal to:</p> */}
               <div className="grid grid-cols-1 gap-5">
                 {getConversionResults()}
